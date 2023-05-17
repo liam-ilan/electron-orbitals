@@ -29,9 +29,9 @@ $$\psi^{real}_{n,l,m}(r,\theta,\phi)=
     \sqrt{2}(-1)^{m}Im(\psi_{n,l,|m|}(r,\theta,\phi)) & \text{if $m < 0$}\\
     \psi_{n,l,|m|}(r,\theta,\phi) & \text{if } m = 0 \\
     \sqrt{2}(-1)^{m}Re(\psi_{n,l,|m|}(r,\theta,\phi)) & \text{if $m > 0$} 
-  \end{cases}$
-$
+  \end{cases}
 $$
+
 
 Rendering the probability distribution function, is done by sampling and even distribution of points in cartesian space, converting the cartesian coordinates to spherical coordinates, and computing the wave function at that point. This is done either in a two dimensional grid for the cross section diagrams, or in a 3d grid for the 3d diagrams. The cross section diagrams are sampled in a $400 \times 400$ grid (160,000 datapoints total), and the 3d diagrams are sampled in a $100 \times 100 \times 100$ grid (1,000,000 datapoints total).
 
