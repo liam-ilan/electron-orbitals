@@ -16,7 +16,7 @@ for n in range(1, 8):
       render_3d(n, l, m, './img/3d-complex/' + f'{n},{l},{m}.png', 'complex')
       render_cross_section(n, l, m, './img/cross/' + f'{n},{l},{m}.png')
 
-# Test
+# test
 # n = 70
 # l = 69
 # m = 30
