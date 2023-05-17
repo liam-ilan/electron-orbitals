@@ -20,10 +20,10 @@ Where
 - $n =$ The principle quantum number, $0 < n$
 - $l =$ The azimuthal quantum number, $0 \le l \le n - 1$
 - $m =$ The magnetic quantum number, $-l \le m \le l$
-- $Y_{l,m}(\theta,\phi) =$ spherical harmonics of l, order m (provided by scipy's `scipy.special.sph_harm`)
+- $Y_{l,m}(\theta,\phi) =$ spherical harmonics of l, order m (provided by Scipy's `scipy.special.sph_harm`)
 - $R_{n,l}(r) =$ the radial function (provided by [Prof. Davit Potoyan and Mr. Zachery Crandall](https://dpotoyan.github.io/Chem324/H-atom-wavef.html))
 
-This wave function is most often used in physics, and are always rotationally symetrical around the z-axis. With that being said, the most common visual of an electron orbital is it's real orbital. Real orbital wave functions are superpositions of the two complex orbital wave functions, $\psi_{n,l,m}(r,\theta,\phi)$ and $\psi_{n,l,-m}(r,\theta,\phi)$. Since $\psi_{n,l,-m}(r,\theta,\phi)$ is the complex conjugate of $\psi_{n,l,m}(r,\theta,\phi)$, the resulting wave function is real-valued.
+This wave function is most often used in physics, and are always rotationally symetrical around the z-axis. With that being said, the most common visual of an electron orbital is it's real orbital. This is likely the orbital you've seen in a highschool textbook. Real orbital wave functions are superpositions of the two complex orbital wave functions, $\psi_{n,l,m}(r,\theta,\phi)$ and $\psi_{n,l,-m}(r,\theta,\phi)$. Since both of these are complex conjugates of eachother, the resulting wave function is real-valued. The real orbital wave function can be computed as follows,
 
 $$\psi^{real}\_{n,l,m}(r,\theta,\phi)=
   \begin{cases}
@@ -33,8 +33,11 @@ $$\psi^{real}\_{n,l,m}(r,\theta,\phi)=
   \end{cases}
 $$
 
+| ![Complex Orbital](./img/3d-complex/2_1_1.png) | ![Real Orbital](./img/3d-real/2_1_1.png) |
+| ----- | ----- |
+| Complex 2p Orbital with $m=1$| Real 2p Orbital with $m=1$|
 
-Rendering the probability distribution function, is done by sampling and even distribution of points in cartesian space, converting the cartesian coordinates to spherical coordinates, and computing the wave function at that point. This is done either in a two dimensional grid for the cross section diagrams, or in a 3d grid for the 3d diagrams. The cross section diagrams are sampled in a $400 \times 400$ grid (160,000 datapoints total), and the 3d diagrams are sampled in a $100 \times 100 \times 100$ grid (1,000,000 datapoints total).
+Rendering the probability distribution function, is done by sampling and even distribution of points in cartesian space, converting the cartesian coordinates to spherical coordinates, and computing $|\psi^2|$ at that point. This is done either in a two dimensional grid for the cross section diagrams, or in a 3d grid for the 3d diagrams. The cross section diagrams are sampled in a $400 \times 400$ grid (160,000 datapoints total), and the 3d diagrams are sampled in a $100 \times 100 \times 100$ grid (1,000,000 datapoints total).
 
 ## Render Your Own Orbitals
 The software used to generate these renders was built with Python, Scipy, Numpy, and Matplotlib. To install all necessary packages through pip,
