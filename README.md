@@ -27,8 +27,8 @@ This wave function is most often used in physics, and are always rotationally sy
 $$
    \psi^{real}_{n,l,m}(r,\theta,\phi) = \left\{
      \begin{array}{lr}
-       \sqrt{2}(-1)^{m}Im(\psi_{n,l,|m|}(r,\theta,\phi)) & \text{if } m < 0\\
-       \psi_{n,l,|m|}(r,\theta,\phi) & \text{if } m = 0\\
+       \sqrt{2}(-1)^{m}Im(\psi_{n,l,|m|}(r,\theta,\phi)) & \text{if } m < 0\\\\\\
+       \psi_{n,l,|m|}(r,\theta,\phi) & \text{if } m = 0\\\\\\
        \sqrt{2}(-1)^{m}Re(\psi_{n,l,|m|}(r,\theta,\phi)) & \text{if } m > 0
      \end{array}
    \right.
