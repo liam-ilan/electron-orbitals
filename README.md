@@ -26,9 +26,9 @@ Where
 This wave function is most often used in physics, and are always rotationally symetrical around the z-axis. With that being said, the most common visual of an electron orbital is it's real orbital. Real orbital wave functions are superpositions of the two complex orbital wave functions, $\psi_{n,l,m}$ and $\psi_{n,l,-m}$. Since $\psi_{n,l,-m}$ is the complex conjugate of $\psi_{n,l,m}$, the resulting wave function is real-valued.
 $$\psi^{real}_{n,l,m}(r,\theta,\phi)=
   \begin{cases}
-    \sqrt{2}(-1)^{m}Im(\psi_{n,l,|m|}(r,\theta,\phi)) & \text{if $m < 0$}\\
+    \sqrt{2}(-1)^{m}Im(\psi_{n,l,|m|}(r,\theta,\phi)) & \text{if } m < 0\\
     \psi_{n,l,|m|}(r,\theta,\phi) & \text{if } m = 0 \\
-    \sqrt{2}(-1)^{m}Re(\psi_{n,l,|m|}(r,\theta,\phi)) & \text{if $m > 0$} 
+    \sqrt{2}(-1)^{m}Re(\psi_{n,l,|m|}(r,\theta,\phi)) & \text{if } m > 0
   \end{cases}
 $$
 
