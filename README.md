@@ -5,11 +5,20 @@ High quality renders of electron orbitals around Hydrogen, as well as the softwa
 | Cross Section of a 5f Orbital | Probability Distribution of 5f Complex Orbital | Probability Distribution of a 5f Real Orbital |
 
 ## About
-This repository contains all 3d and cross-sectional renders for the probability density functions (|Ψ|²) of both real and complex orbitals.
+This repository contains all 3d and cross-sectional renders for the probability density functions ($|\psi^2|$) of both real and complex orbitals.
 
 Classical models of the atom, such as Bohr's model, model electrons as particles with definitive positions and momenta. This model does not account for various observed phenomena (see [Double-slit Experiment](https://en.wikipedia.org/wiki/Double-slit_experiment)). In reality, it is observed that particles, such as electrons, exhibit both particle and wave behavior.
 
-In the quantum model of an atom, electron's do not exist in definite positions, but rather are described by their wave functions (denoted Ψ), thus, the position of an electron is not definitve. According to the Born interpretation, the value of the probability distribution function describing the chance of an electron being found at any given position, can be calculated by taking the amplitude of the wave function, and then squaring it (|Ψ|²).
+In the quantum model of an atom, electron's do not exist in definite positions, but rather are described by their wave functions (denoted $\psi$), thus, the position of an electron is not definitve. According to the [Born interpretation](https://en.wikipedia.org/wiki/Born_rule), the value of the probability distribution function describing the chance of an electron being found at any given position, can be calculated by taking the amplitude of the wave function, and then squaring it ($|\psi^2|$).
+
+The wave function for an electron around a hydrogen nucleus (single proton), is defined in spherical coordinates as follows:
+$$\psi_{nlm}(r,\theta,\phi)=R(r)Y_{l}^{m}(\theta,\phi)$$
+
+Where
+- $n =$ The principle quantum number, $0 < n$
+- $l =$ The azimuthal quantum number, $0 \le l \le n - 1$
+- $l =$ The magnetic quantum number, $-l \le l \le n$
+
 
 ## Render Your Own Orbitals
 The software used to generate these renders was built with Python, Scipy, Numpy, and Matplotlib. To install all nescacary packages through pip,
@@ -21,5 +30,5 @@ From there, run `python3 generator/main.py` to generate renders for all 140 orbi
 
 ### Notes for modifying the software
 - `generator/render_3d.py` and `generator/render_cross_section.py` contain methods to render their respective orbtials.
-- `generator/hydrogen.py` contains methods for computing the probability density functions of real and complex orbitals, in both cartesian and polar coordinates. Credit to [Prof. Davit Potoyan and Mr. Zachery Crandall](https://dpotoyan.github.io/Chem324/H-atom-wavef.html) for the radial function.
+- `generator/hydrogen.py` contains methods for computing the probability density functions of real and complex orbitals, in both cartesian and spherical coordinates. Credit to [Prof. Davit Potoyan and Mr. Zachery Crandall](https://dpotoyan.github.io/Chem324/H-atom-wavef.html) for the radial function.
 - `generator/get_render_radius.py` contains an algorithim for finding what bounding radius should be rendered
