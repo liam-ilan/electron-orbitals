@@ -7,7 +7,9 @@ High quality renders of electron orbitals around Hydrogen, as well as the softwa
 ## About
 This repository contains all 3d and cross-sectional renders for the probability density functions (|Ψ|²) of both real and complex orbitals.
 
-Classical models of the atom, such as Bohr's model, model electrons as particles with definitive positions and momenta. With that being said, this model does not account for various observed phenomena (see [Double-slit Experiment](https://en.wikipedia.org/wiki/Double-slit_experiment)). In reality, it is observed that particles, such as electrons, exhibit both particle and wave behavior.
+Classical models of the atom, such as Bohr's model, model electrons as particles with definitive positions and momenta. This model does not account for various observed phenomena (see [Double-slit Experiment](https://en.wikipedia.org/wiki/Double-slit_experiment)). In reality, it is observed that particles, such as electrons, exhibit both particle and wave behavior.
+
+In the quantum model of an atom, electron's do not exist in definite positions, but rather are described by their wave functions (denoted Ψ), thus, the position of an electron is not definitve. According to the Born interpretation, the value of the probability distribution function describing the chance of an electron being found at any given position, can be calculated by taking the amplitude of the wave function, and then squaring it (|Ψ|²).
 
 ## Render Your Own Orbitals
 The software used to generate these renders was built with Python, Scipy, Numpy, and Matplotlib. To install all nescacary packages through pip,
