@@ -25,7 +25,7 @@ Where
 
 > *Note: in chemistry class, you may have learned that subshells are labeled s, p, d, f, g, h, and i. These refer to the azimuthal quantum numbers ($l$) 0, 1, 2, 3, 4, 5, and 6 respectively.*
 
-The diagrams generated from this project are titled with the three numbers characterizing electrons, (n, l, m). While the software can generate diagrams for negative $m$s, and hypothetically for unlimited energy levels (or the python factorial limit), graphs are only generated for positive $m$s, as the magnitude of the wave function, and thus probability distribution function, is the same for $\pm m$.
+The diagrams generated from this project are titled with the three numbers characterizing electrons, (n, l, m). While the software can generate diagrams for negative ms, and hypothetically for unlimited energy levels (or the python factorial limit), graphs are only generated for positive ms, as the magnitude of the wave function, and thus probability distribution function, is the same for $\pm m$.
 
 This wave function is most often used in physics, and is always rotationally symmetrical around the z-axis. With that being said, the most common visual of an electron orbital is its real orbital. This is likely the orbital you've seen in a highschool textbook. Real orbital wave functions are superpositions of the two complex orbital wave functions, $\psi_{n,l,m}(r,\theta,\phi)$ and $\psi_{n,l,-m}(r,\theta,\phi)$. Since both of these are complex conjugates of each other, the resulting wave function is real-valued. The real orbital wave function can be computed as follows,
 
