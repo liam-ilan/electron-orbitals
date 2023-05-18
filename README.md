@@ -22,11 +22,12 @@ Where
 - $m =$ The magnetic quantum number, refers to the specific orbital within the subshell, $-l \le m \le l$
 - $Y_{l,m}(\theta,\phi) =$ spherical harmonics of l, order m (provided by Scipy's `scipy.special.sph_harm`)
 - $R_{n,l}(r) =$ the radial function (provided by [Prof. Davit Potoyan and Mr. Zachery Crandall](https://dpotoyan.github.io/Chem324/H-atom-wavef.html))
-*note, in chemistry class, you may have learned that subshells are labeled s, p, d, f, g, h, and i. These refer to the azimuthal quantum numbers ($l$) 0, 1, 2, 3, 4, 5, and 6 respectively.
 
-The diagrams generated from this project are titled with the three numbers characterizing electrons, (n, l, m).
+> *Note: in chemistry class, you may have learned that subshells are labeled s, p, d, f, g, h, and i. These refer to the azimuthal quantum numbers ($l$) 0, 1, 2, 3, 4, 5, and 6 respectively.*
 
-This wave function is most often used in physics, and are always rotationally symmetrical around the z-axis. With that being said, the most common visual of an electron orbital is its real orbital. This is likely the orbital you've seen in a highschool textbook. Real orbital wave functions are superpositions of the two complex orbital wave functions, $\psi_{n,l,m}(r,\theta,\phi)$ and $\psi_{n,l,-m}(r,\theta,\phi)$. Since both of these are complex conjugates of each other, the resulting wave function is real-valued. The real orbital wave function can be computed as follows,
+The diagrams generated from this project are titled with the three numbers characterizing electrons, (n, l, m). While the software can generate diagrams for negative $m$s, and hypothetically for unlimited energy levels (or the python factorial limit), graphs are only generated for positive $m$s, as the magnitude of the wave function, and thus probability distribution function, is the same for $\pm m$.
+
+This wave function is most often used in physics, and is always rotationally symmetrical around the z-axis. With that being said, the most common visual of an electron orbital is its real orbital. This is likely the orbital you've seen in a highschool textbook. Real orbital wave functions are superpositions of the two complex orbital wave functions, $\psi_{n,l,m}(r,\theta,\phi)$ and $\psi_{n,l,-m}(r,\theta,\phi)$. Since both of these are complex conjugates of each other, the resulting wave function is real-valued. The real orbital wave function can be computed as follows,
 
 $$\psi^{real}\_{n,l,m}(r,\theta,\phi)=
   \begin{cases}
@@ -40,7 +41,16 @@ $$
 | ----- | ----- |
 | Complex 2p Orbital for $m=1$| Real 2p Orbital for $m=1$|
 
-Rendering the probability distribution function, is done by sampling and even distribution of points in cartesian space, converting the cartesian coordinates to spherical coordinates, and computing $|\psi^2|$ at that point. This is done either in a two dimensional grid for the cross section diagrams, or in a 3d grid for the 3d diagrams. The cross section diagrams are sampled in a $400 \times 400$ grid (160,000 datapoints total), and the 3d diagrams are sampled in a $100 \times 100 \times 100$ grid (1,000,000 datapoints total).
+Rendering the probability distribution function, is done by sampling and even distribution of points in cartesian space, converting the cartesian coordinates to spherical coordinates, and computing $|\psi^2|$ at that point. This is done either in a two dimensional grid for the cross section diagrams, or in a 3d grid for the 3d diagrams. The cross section diagrams are sampled in a $400 \times 400$ grid (160,000 data points total), and the 3d diagrams are sampled in a $100 \times 100 \times 100$ grid (1,000,000 data points total).
+
+## Navigating the Images
+The `/img` directory contains all rendered images. They are split into the self-explanatory subdirectories `3d-complex`, `3d-real`, and `cross`. Under each directory, images are titled `n_l_m.png`.
+
+## Navigating the Rendering Software
+All rendering software is under `/generator` directory.
+- `generator/render_3d.py` and `generator/render_cross_section.py` contain methods to render their respective orbitals.
+- `generator/hydrogen.py` contains methods for computing the probability density functions of real and complex orbitals, in both cartesian and spherical coordinates. Credit to [Prof. Davit Potoyan and Mr. Zachery Crandall](https://dpotoyan.github.io/Chem324/H-atom-wavef.html) for the radial function.
+- `generator/get_render_radius.py` contains an algorithm for finding what bounding radius should be rendered.
 
 ## Render Your Own Orbitals
 The software used to generate these renders was built with Python, Scipy, Numpy, and Matplotlib. To install all necessary packages through pip,
@@ -49,11 +59,6 @@ pip install -r requirements.txt
 ```
 
 From there, run `python3 generator/main.py` to generate renders for all 140 orbitals.
-
-### Notes for modifying the software
-- `generator/render_3d.py` and `generator/render_cross_section.py` contain methods to render their respective orbitals.
-- `generator/hydrogen.py` contains methods for computing the probability density functions of real and complex orbitals, in both cartesian and spherical coordinates. Credit to [Prof. Davit Potoyan and Mr. Zachery Crandall](https://dpotoyan.github.io/Chem324/H-atom-wavef.html) for the radial function.
-- `generator/get_render_radius.py` contains an algorithm for finding what bounding radius should be rendered
 
 ## Credits
 - Built by [Liam Ilan](https://github.com/liam-ilan)
