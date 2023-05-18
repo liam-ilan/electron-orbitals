@@ -23,7 +23,7 @@ Where
 - $Y_{l,m}(\theta,\phi) =$ spherical harmonics of l, order m (provided by Scipy's `scipy.special.sph_harm`)
 - $R_{n,l}(r) =$ the radial function (provided by [Prof. Davit Potoyan and Mr. Zachery Crandall](https://dpotoyan.github.io/Chem324/H-atom-wavef.html))
 
-> *Note: in chemistry class, you may have learned that subshells are labeled s, p, d, f, g, h, and i. These refer to the azimuthal quantum numbers ($l$) 0, 1, 2, 3, 4, 5, and 6 respectively.*
+Note: in chemistry class, you may have learned that subshells are labeled s, p, d, f, g, h, and i. These refer to the azimuthal quantum numbers ($`l`$) 0, 1, 2, 3, 4, 5, and 6 respectively.
 
 The diagrams generated from this project are titled with the three numbers characterizing electrons, (n, l, m). While the software can generate diagrams for negative ms, and hypothetically for unlimited energy levels (or the python factorial limit), graphs are only generated for positive ms, as the magnitude of the wave function, and thus probability distribution function, is the same for $\pm m$.
 
