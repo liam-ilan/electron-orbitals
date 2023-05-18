@@ -43,9 +43,9 @@ graphEl.src = path
 document.getElementById(`${mode}-select`).classList.add('selected-mode')
 
 // set up links for mode selection
-crossSelect.href = `/?cross_${n}_${l}_${m}`
-realSelect.href = `/?3d-real_${n}_${l}_${m}`
-complexSelect.href = `/?3d-complex_${n}_${l}_${m}`
+crossSelect.href = `./?cross_${n}_${l}_${m}`
+realSelect.href = `./?3d-real_${n}_${l}_${m}`
+complexSelect.href = `./?3d-complex_${n}_${l}_${m}`
 
 // subshell numbers to letters table
 subshellTable = {
