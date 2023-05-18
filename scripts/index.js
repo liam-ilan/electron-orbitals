@@ -65,9 +65,9 @@ for (let nTable = 1; nTable < 8; nTable += 1) {
   for (let lTable = 0; lTable < nTable; lTable += 1) {
     let subshellSection = `<div class="subshell-container"><div class="links-container">`
 
-    for (let mTable = 0; mTable <= lTable; mTable += 1) {
+    for (let mTable = -lTable; mTable <= lTable; mTable += 1) {
       subshellSection += `<a 
-        href="/?${mode}_${nTable}_${lTable}_${mTable}" 
+        href="./?${mode}_${nTable}_${lTable}_${mTable}" 
         class="orbital ${nTable === n && lTable === l && mTable === m ? "selected-orbital" : ""}">${mTable}
       </a>`
     }

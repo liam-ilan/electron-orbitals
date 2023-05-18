@@ -7,7 +7,7 @@ High quality renders of electron orbitals around Hydrogen, as well as the softwa
 ## About
 > Note: the following is just a summary. I highly recommend reading [this Wikipedia article](https://en.wikipedia.org/wiki/Wave_function#Hydrogen_atom), and [this LibreTexts article](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Map%3A_Physical_Chemistry_for_the_Biosciences_(Chang)/11%3A_Quantum_Mechanics_and_Atomic_Structure/11.10%3A_The_Schrodinger_Wave_Equation_for_the_Hydrogen_Atom). A large amount of the following explanation uses both of these articles as a source. Additionally, [this explanation](https://physics.stackexchange.com/q/190730) on stack exchange on the difference between real and complex orbitals was extremely useful.
 
-This repository contains all 3d and cross-sectional renders for the probability density functions ($|\psi^2|$) of both real and complex orbitals.
+This repository contains all 3d and cross-sectional renders for the probability density functions ($|\psi^2|$) of both real and complex orbitals, up to $`n=7`$.
 
 Classical models of the atom, such as Bohr's model, model electrons as particles with definitive positions and momenta. This model does not account for various observed phenomena (see [Double-slit Experiment](https://en.wikipedia.org/wiki/Double-slit_experiment)). In reality, it is observed that particles, such as electrons, exhibit both particle and wave behavior.
 
@@ -25,7 +25,7 @@ Where
 
 > Note: in chemistry class, you may have learned that subshells are labeled s, p, d, f, g, h, and i. These refer to the azimuthal quantum numbers ($`l`$) 0, 1, 2, 3, 4, 5, and 6 respectively.
 
-The diagrams generated from this project are titled with the three numbers characterizing electrons, (n, l, m). While the software can generate diagrams for negative ms, and hypothetically for unlimited energy levels (or the python factorial limit), graphs are only generated for positive ms, as the magnitude of the wave function, and thus probability distribution function, is the same for $\pm m$.
+The diagrams generated from this project are titled with the three numbers characterizing electrons, (n, l, m). 
 
 This wave function is most often used in physics, and is always rotationally symmetrical around the z-axis. With that being said, the most common visual of an electron orbital is its real orbital. This is likely the orbital you've seen in a highschool textbook. Real orbital wave functions are superpositions of the two complex orbital wave functions, $\psi_{n,l,m}(r,\theta,\phi)$ and $\psi_{n,l,-m}(r,\theta,\phi)$. Since both of these are complex conjugates of each other, the resulting wave function is real-valued. The real orbital wave function can be computed as follows,
 

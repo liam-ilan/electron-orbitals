@@ -78,7 +78,7 @@ def render_3d(n, l, m, path, mode):
   ] for p in enumerate(p_data)])
 
   # labels
-  plt.title(f'Electron Cloud of ({n}, {l}, {"±" if mode == "real" and m != 0 else ""}{abs(m)}) {mode.capitalize()} Hydrogen Orbital')
+  plt.title(f'Electron Cloud of ({n}, {l}, {m}) {mode.capitalize()} Hydrogen Orbital')
   ax.set_xlabel(r'x ($a_{0}$)')
   ax.set_ylabel(r'y ($a_{0}$)')
   ax.set_zlabel(r'z ($a_{0}$)')

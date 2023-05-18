@@ -22,8 +22,8 @@ for n in range(1, 8):
       render_cross_section(n, l, m, './img/cross/' + f'{n}_{l}_{m}.png')
 
 # test
-# n = 70
-# l = 69
-# m = 30
-# render_3d(n, l, m, './img/' + f'test-3d.png', 'real')
-# render_cross_section(n, l, m, './img/' + f'test-cross.png')
+# n = 2
+# l = 1
+# m = -1
+# render_3d(n, l, m, './img/test/' + f'test-3d.png', 'real')
+# render_cross_section(n, l, m, './img/test/' + f'test-cross.png')

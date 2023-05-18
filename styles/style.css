@@ -16,9 +16,10 @@ a {
 .selected-orbital {
   background-color: #bebebe;
 }
+
 .section {
   background-color: #dcdcdc;
-  flex: 1;
+  flex: 3;
   border: 1px solid black;
   padding: 10px;
   margin: 10px
@@ -61,4 +62,8 @@ a {
 
 #image {
   width: 100%
+}
+
+#graph {
+  flex: 2
 }
