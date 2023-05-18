@@ -16,7 +16,8 @@ for n in range(1, 8):
     for m in range(-l, l + 1):
       count += 1
       print(f'Rendering Orbital {count}/140')
-      if m >= 0: render_3d(n, l, m, './img/3d-real/' + f'{n}_{l}_{m}.png', 'real')
+      
+      render_3d(n, l, m, './img/3d-real/' + f'{n}_{l}_{m}.png', 'real')
       render_3d(n, l, m, './img/3d-complex/' + f'{n}_{l}_{m}.png', 'complex')
       render_cross_section(n, l, m, './img/cross/' + f'{n}_{l}_{m}.png')
 
