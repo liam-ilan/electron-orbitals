@@ -5,9 +5,8 @@ import os
 # n: [1, 7]
 # l: [0, n - 1]
 # m: [-l, l]
-# with that being said, we only render m: [0, l]
-# due to wave function for -m and m having same probabilities
-# have same probabilities, as they are complex conjugates, with same amplitudes
+
+# total image count: 420
 
 count = 0
 

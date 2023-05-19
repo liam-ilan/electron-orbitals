@@ -45,8 +45,7 @@ def render_3d(n, l, m, path, mode):
         current_point += 1
 
     # log progress
-    print('Calculated ' + str(round(current_point / point_count * 100)) +
-          '% of points')
+    print('Calculated ' + str(round(current_point / point_count * 100)) + '% of points')
 
   print('Rendering figure')
   # find net probability

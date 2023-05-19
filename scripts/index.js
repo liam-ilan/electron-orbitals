@@ -60,7 +60,7 @@ subshellTable = {
 
 // create table for orbital selection
 for (let nTable = 1; nTable < 8; nTable += 1) {
-  let tableRow = '<div><div class="subshell-container">m</br>Subshell</div>'
+  let tableRow = `<div style="background-color:hsl(${nTable * 50}, 100%, 80%)">`
 
   for (let lTable = 0; lTable < nTable; lTable += 1) {
     let subshellSection = `<div class="subshell-container"><div class="links-container">`
