@@ -37,7 +37,7 @@
       </p>
 
       <p>
-        In the quantum model of an atom, electrons do not exist in definite positions, but rather are described by their wave functions (denoted \(\psi\)), thus, the position of an electron is not definitive. According to the <a href="https://en.wikipedia.org/wiki/Born_rule">Born interpretation</a>, the value of the probability distribution function describing the chance of an electron being found at any given position, can be calculated by taking the amplitude of the wave function, and then squaring it (\(|\psi^2|\)).
+        In the quantum model of an atom, electrons do not exist in definite positions, but rather are described by their wave functions (denoted \(\psi\)), thus, the position of an electron is not definitive. According to the <a href="https://en.wikipedia.org/wiki/Born_rule">Born interpretation</a>, the value of the probability distribution function describing the chance of an electron being found at any given position, can be calculated by taking the amplitude of the wave function, and then squaring it (\(|\psi|^2\)).
       </p>
 
       <p>
@@ -47,7 +47,7 @@
           <li>\(n =\) The principal quantum number, refers to the energy level of the electron, \(0 &lt; n\)</li>
           <li>\(l =\) The azimuthal quantum number, refers to the subshell of the electron, \(0 \le l \le n - 1\)</li>
           <li>\(m =\) The magnetic quantum number, refers to the specific orbital within the subshell, \(-l \le m \le l\)</li>
-          <li>\(Y_{l,m}(\theta,\phi) =\) spherical harmonics of l, order m (provided by Scipy&#39;s <code>scipy.special.sph_harm</code>)</li>
+          <li>\(Y_{l,m}(\theta,\phi) =\) spherical harmonics of l, order m (provided by Scipy's <code>scipy.special.sph_harm</code>)</li>
           <li>\(R_{n,l}(r) =\) the radial function (provided by <a href="https://dpotoyan.github.io/Chem324/H-atom-wavef.html">Prof. Davit Potoyan and Mr. Zachery Crandall</a>)</li>
         </ul>
       </p>
@@ -73,7 +73,7 @@
       </p>
 
       <p>
-        Rendering the probability distribution function, is done by sampling and even distribution of points in cartesian space, converting the cartesian coordinates to spherical coordinates, and computing \(|\psi^2|\) at that point. This is done either in a two dimensional grid for the cross section diagrams, or in a 3d grid for the 3d diagrams. The cross section diagrams are sampled in a \(400 \times 400\) grid (160,000 data points total), and the 3d diagrams are sampled in a \(100 \times 100 \times 100\) grid (1,000,000 data points total).
+        Rendering the probability distribution function, is done by sampling and even distribution of points in cartesian space, converting the cartesian coordinates to spherical coordinates, and computing \(|\psi|^2\) at that point. This is done either in a two dimensional grid for the cross section diagrams, or in a 3d grid for the 3d diagrams. The cross section diagrams are sampled in a \(400 \times 400\) grid (160,000 data points total), and the 3d diagrams are sampled in a \(100 \times 100 \times 100\) grid (1,000,000 data points total).
       </p>
       <p>Cross sections are provided only for complex orbitals.</p>
 
