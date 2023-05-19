@@ -20,6 +20,8 @@ a {
 
 h1, h2 {
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 code {
