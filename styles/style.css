@@ -24,6 +24,10 @@ h1, h2 {
   margin-right: 10px;
 }
 
+h2 {
+  margin-top: 0
+}
+
 code {
   font-size: 12pt;
   padding: 2px;
