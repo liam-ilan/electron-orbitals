@@ -58,12 +58,25 @@ All rendering software is under `/generator` directory.
 - `generator/get_render_radius.py` contains an algorithm for finding what bounding radius should be rendered.
 
 ## Render Your Own Orbitals
+First, clone this repo,
+```
+git clone https://github.com/liam-ilan/electron-orbitals.git
+```
+
 The software used to generate these renders was built with Python, Scipy, Numpy, and Matplotlib. To install all necessary packages through pip,
 ``` python
 pip install -r requirements.txt
 ```
 
 From there, run `python3 generator/main.py` to generate renders for all 140 orbitals.
+
+## Developing the Site
+As mentioned earlier, this repo also includes a [Periodic Table of Orbitals](https://liam-ilan.github.io/electron-orbitals). To run this site locally with php localhost on port 8000,
+```
+php -S localhost:8000
+```
+
+All code for the site is included under `index.html`, `scripts/index.js`, and `styles/style.css`. Equation rendering done with [MathJax](https://www.mathjax.org/).
 
 ## Credits
 - Built by [Liam Ilan](https://github.com/liam-ilan)
