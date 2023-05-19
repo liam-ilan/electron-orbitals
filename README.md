@@ -82,5 +82,5 @@ php -S localhost:8000
 All code for the site is included under `index.html`, `scripts/index.js`, and `styles/style.css`. Equation rendering done with [MathJax](https://www.mathjax.org/).
 
 ## Credits
-- Built by [Liam Ilan](https://github.com/liam-ilan)
+- Built by [Liam Ilan](https://www.liamilan.com/)
 - Credit to [Prof. Davit Potoyan and Mr. Zachery Crandall](https://dpotoyan.github.io/Chem324/H-atom-wavef.html) for the radial function
