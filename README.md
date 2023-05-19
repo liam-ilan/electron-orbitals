@@ -1,4 +1,4 @@
-# Hydrogen Electron Orbital Renderer
+# The Periodic Table of Orbitals
 High quality renders of electron orbitals around Hydrogen, as well as the software to generate them. https://liam-ilan.github.io/electron-orbitals.
 | ![Cross Section of 5f Orbital](./img/cross/5_3_2.png) | ![Probability Distribution of a 5f Complex Orbital](./img/3d-complex/5_3_2.png) | ![Probability Distribution of a 5f Real Orbital](./img/3d-real/5_3_2.png) |
 | ----- | ----- | ----- |
@@ -42,6 +42,8 @@ $$
 | Complex 2p Orbital for $m=1$| Real 2p Orbital for $m=1$|
 
 Rendering the probability distribution function, is done by sampling and even distribution of points in cartesian space, converting the cartesian coordinates to spherical coordinates, and computing $|\psi^2|$ at that point. This is done either in a two dimensional grid for the cross section diagrams, or in a 3d grid for the 3d diagrams. The cross section diagrams are sampled in a $400 \times 400$ grid (160,000 data points total), and the 3d diagrams are sampled in a $100 \times 100 \times 100$ grid (1,000,000 data points total).
+
+Cross sections are provided only for complex orbitals.
 
 ## Using the Periodic Table of Orbitals
 Visit https://liam-ilan.github.io/electron-orbitals
