@@ -1,8 +1,11 @@
 # The Periodic Table of Orbitals
-High quality renders of electron orbitals around Hydrogen, as well as the software to generate them. https://liam-ilan.github.io/electron-orbitals.
+High quality renders of electron orbitals around Hydrogen, the software to generate them, and a site to browse them.
+
 | ![Cross Section of 5f Orbital](./img/cross/5_3_2.png) | ![Probability Distribution of a 5f Complex Orbital](./img/3d-complex/5_3_2.png) | ![Probability Distribution of a 5f Real Orbital](./img/3d-real/5_3_2.png) |
 | ----- | ----- | ----- |
 | Cross Section of a 5f Orbital | Probability Distribution of 5f Complex Orbital | Probability Distribution of a 5f Real Orbital |
+
+Try it out live @ https://liam-ilan.github.io/electron-orbitals
 
 ## About
 This repository contains all 3d and cross-sectional renders for the probability density functions ($|\psi^2|$) of both real and complex orbitals, up to $`n=7`$. Additionally, it provides a [Periodic Table of Orbitals](https://liam-ilan.github.io/electron-orbitals) to browse orbitals.

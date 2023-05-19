@@ -32,9 +32,14 @@ code {
 }
 
 mjx-container {
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
 }
+
+mjx-container > * {
+  overflow-x: auto;
+}
+
 
 #container {
   display: flex;
