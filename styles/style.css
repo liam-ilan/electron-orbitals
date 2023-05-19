@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 body, html {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: #eee;
+  top: 0;
+  position: absolute;
+  background-color: #f3f3f3;
+  font-family: 'Roboto Slab', serif;
 }
 
 td {
@@ -13,8 +18,20 @@ a {
   color: black;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
+}
+
+code {
+  font-size: 12pt;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+mjx-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 #container {
@@ -22,55 +39,90 @@ h1 {
   flex-direction: column-reverse;
 }
 
-@media (min-width: 1000px) {
-  #container { flex-direction: row; }
-}
-
-.selected-orbital {
-  background-color: #bebebe;
-}
-
 .section {
-  background-color: #dcdcdc;
   flex: 3;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px
 }
 
 .subshell-container {
   text-align: center;
 }
-  
-.orbital {
+
+.labels-container {
   margin: 2px
 }
 
-.selected-mode {
-  background-color: #bebebe;
+#select {
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px
+}
+
+#graph {
+  flex: 2;
+  margin: 10px
+}
+
+@media (min-width: 1000px) {
+  #container { flex-direction: row; }
+  #graph {margin-left: 5px; margin-right: 10px;}
+  #select {margin-right: 5px; margin-left: 10px;}
+}
+
+#selected-orbital {
+  background-color: #030303;
+  color: white
+}
+
+.orbital {
+  margin: 2px;
+  width: 16pt;
+  height: 16pt;
+  background-color: white;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+#selected-mode {
+  background-color: #030303;
+  color: white
 }
 
 .links-container {
   display: inline-flex;
+  margin-top: 3px;
 }
+
 .subshell-container {
   display: inline-flex;
   flex-direction: column;
-  margin: 3px
+  margin: 0 10px;
+}
+
+.selectable-mode {
+  margin: 5px;
+  background-color: white;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 7px;
+  text-decoration: none;  
+}
+
+.note {
+  border-left: 5px solid #ccc;
+  padding: 10px;
+  color: #666
 }
 
 #mode-selection {
   text-align: center;
 }
 
-#mode-selection > button {
-  background-color: #cdcdcd;
-}
-
 #image {
-  width: 100%
+  width: 100%;
+  border-radius: 10px
 }
 
-#graph {
-  flex: 2
+#about {
+  padding: 30px;
 }

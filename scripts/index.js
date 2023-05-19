@@ -40,7 +40,7 @@ const path = `img/${mode}/${n}_${l}_${m}.png`
 graphEl.src = path
 
 // mark selected mode
-document.getElementById(`${mode}-select`).classList.add('selected-mode')
+document.getElementById(`${mode}-select`).id = 'selected-mode'
 
 // set up links for mode selection
 crossSelect.href = `./?cross_${n}_${l}_${m}`
@@ -68,11 +68,11 @@ for (let nTable = 1; nTable < 8; nTable += 1) {
     for (let mTable = -lTable; mTable <= lTable; mTable += 1) {
       subshellSection += `<a 
         href="./?${mode}_${nTable}_${lTable}_${mTable}" 
-        class="orbital ${nTable === n && lTable === l && mTable === m ? "selected-orbital" : ""}">${mTable}
+        class="orbital" id="${nTable === n && lTable === l && mTable === m ? "selected-orbital" : ""}">${mTable}
       </a>`
     }
 
-    subshellSection += `</div><div id='labels-container'>${nTable}${subshellTable[lTable]}</div></div>`
+    subshellSection += `</div><div class='labels-container'>${nTable}${subshellTable[lTable]}</div></div>`
     tableRow += subshellSection
   }
 
